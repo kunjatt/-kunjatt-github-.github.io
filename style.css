@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'roboto mono', monospace;
+}
+
+header {
+    height: 70px;
+}
+
+header h2 {
+    display: inline-block;
+    float: none; 
+    padding: 15px 24px;
+    text-transform: uppercase;
+}
+
+header h2 a:hover {
+    color: blue;
+}
+
+header h2 a {
+    transition: 0.4s;
+}
+
+header ul {
+    float: right;
+}
+
+header ul li {
+    padding: 24px;
+    display: inline-block;
+}
+
+header ul li a:hover {
+    color: blue;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.mobile-menu {
+    float: right;
+    display: none;
+    padding: 18px;
+}
+
+.mobile-menu:hover {
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: rgba(54,101,164, 0.9);
+    transition: 0.5s;
+    z-index: 9999;
+}
+
+.sidebar ul li a {
+    color: white;
+}
+
+.sidebar ul li {
+    padding: 24px;
+    transition: 0.5s;
+    transition-property: background-color;
+}
+
+.sidebar ul li:hover {
+    background-color: #ecf03f
+}
+
+#box:checked ~ .sidebar {
+    left: 0;
+}
+
+#box {
+    display: none;
+}
+
+div p {
+    text-align: justify;
+}
+
+.banner {
+    background-color: #beeea9;
+    padding: 50px;
+}
+
+.banner img {
+    /* width: 100px; */
+    /* border-radius: 15px;
+    box-shadow: chartreuse;
+    margin-bottom: 1opx; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 50%;
+}
+
+.banner p {
+    color: orange;
+    text-indent: 30px;
+}
+
+section {
+    padding: 50px;
+}
+
+.efek-ketik {
+    color: #43320f
+}
+
+section h3 {
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 20px;
+    position: relative;
+}
+
+section h3::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 185px;
+    height: 1px;
+    background-color: #ddd;
+    left: 43%;
+}
+
+section h3::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 62px;
+    height: 4px;
+    background-color: rgb(87, 226, 191);
+    left: 48%;
+}
+
+#natural p {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+#natural img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  width: 50%;
+}
+
+#Washed p {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+#Washed img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 50%;
+}
+
+#Semi p {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+#Semi img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 50%;
+}
+
+#Honey p {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+#Honey img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 50%;
+}
+
+footer {
+    background-color: black;
+    padding: 30px;
+    text-align: center;
+}
+footer small {
+    color: white;
+    font-size: 12px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width:760px) {
+    .mobile-menu {
+        display: block;
+    }
+    header ul {
+        display: none;
+    }
+}
+/* body{
+    background-color: seashell
+} */
+
+/* #title {
+    color: red;
+    font-size: 30px;
+}
+
+.text {
+    color: black;
+    font-size: 14px;;
+} */
